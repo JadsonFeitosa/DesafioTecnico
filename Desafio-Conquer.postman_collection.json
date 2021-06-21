@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "0e0a0fb2-c29c-4a31-a449-2737ec6d3dd4",
+		"name": "Desafio-Conquer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "List User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Conquer\",\t\r\n    \"email\": \"conquer@email.com\",\t\r\n    \"cell\":\"99 9999-9999\",\r\n    \"date\":\"20/06/2021\",\r\n    \"password\": \"conquer123\",\r\n    \"username\": \"conquer\",\r\n    \"picture\": \"https://media-exp3.licdn.com/dms/image/C4D0BAQE9etBKh8qfDg/company-logo_200_200/0/1617838543426?e=2159024400&v=beta&t=rUmY55Ntgao9OmldQDDMajjpFA7ZcuGrip_ep17MPlY\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jadson\",\t\r\n    \"email\": \"Jadson@email.com\",\t\r\n    \"cell\":\"111111\",\r\n    \"date\":\"20/06/2021\",\r\n    \"password\": \"jadson123\",\r\n    \"username\": \"jadson\",\r\n    \"picture\": \"https://media-exp3.licdn.com/dms/image/C4D0BAQE9etBKh8qfDg/company-logo_200_200/0/1617838543426?e=2159024400&v=beta&t=rUmY55Ntgao9OmldQDDMajjpFA7ZcuGrip_ep17MPlY\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"LUAN\",\r\n    \"email\": \"JADSON@email.com\",\r\n    \"cell\": \"99 9999-9999\",\r\n    \"date\": \"20/06/2021\",\r\n    \"password\": \"JADSON\",\r\n    \"username\": \"JADSON\",\r\n    \"picture\": \"https://media-exp3.licdn.com/dms/image/C4D0BAQE9etBKh8qfDg/company-logo_200_200/0/1617838543426?e=2159024400&v=beta&t=rUmY55Ntgao9OmldQDDMajjpFA7ZcuGrip_ep17MPlY\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List user by Email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user/filterEmail/conquer@email.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"filterEmail",
+								"conquer@email.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List user by Name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user/filterName/Co",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"filterName",
+								"Co"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List user by Cell",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user/filterCell/99",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"filterCell",
+								"99"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
